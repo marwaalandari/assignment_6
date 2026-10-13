@@ -1,0 +1,301 @@
+/* =========================
+   Assignment 6 - Task 1 & 2
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* First page */
+
+.tasks-page {
+    background-color: #ffffff;
+    color: #222222;
+    padding: 20px;
+}
+
+.task-section {
+    margin-bottom: 28px;
+    padding: 15px;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.task-section h2 {
+    font-size: 16px;
+    margin: 0 0 15px;
+}
+
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background-color: #fafafa;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+}
+
+.toolbar input {
+    width: 260px;
+    max-width: 100%;
+    padding: 9px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.add-item {
+    background-color: #2ecc71;
+    color: #ffffff;
+    border: none;
+    padding: 9px 14px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+    gap: 4px;
+    min-height: 90px;
+    padding: 12px;
+    border: 1px solid #eeeeee;
+    background-color: #fafafa;
+}
+
+.filter-tag {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+/* =========================
+   Portfolio page
+   ========================= */
+
+:root {
+    --BODY-BG-COLOR: #f4f6f9;
+    --PRIMARY-COLOR: #1e293b;
+    --ACCENT-COLOR: #1e293b;
+    --STATUS-COLOR: #22c55e;
+}
+
+.portfolio-page {
+    background-color: var(--BODY-BG-COLOR);
+    color: #111827;
+    min-height: 100vh;
+}
+
+/* Navigation bar */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--PRIMARY-COLOR);
+    color: #ffffff;
+    padding: 15px 28px;
+}
+
+.navbar h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* Dashboard layout */
+
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 40px 28px;
+}
+
+/* Profile card */
+
+.profile-card {
+    position: relative;
+    flex: 0 0 38%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.online-status {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--STATUS-COLOR);
+    border-radius: 50%;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 12px;
+    border: 3px solid #4f83e3;
+    border-radius: 50%;
+    background-color: #d1d5db;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.profile-card h2 {
+    margin: 0 0 4px;
+    font-size: 14px;
+}
+
+.job-title {
+    margin: 0;
+    color: #64748b;
+    font-size: 11px;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid #eeeeee;
+}
+
+.profile-stats div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.profile-stats strong {
+    font-size: 13px;
+}
+
+.profile-stats span {
+    color: #64748b;
+    font-size: 10px;
+}
+
+/* Projects card */
+
+.projects-card {
+    flex: 1;
+    min-width: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.projects-card > h2 {
+    margin: 0 0 16px;
+    font-size: 14px;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+}
+
+.project:last-child {
+    margin-bottom: 0;
+}
+
+.project h3 {
+    margin: 0 0 4px;
+    font-size: 12px;
+}
+
+.project p {
+    margin: 0;
+    color: #64748b;
+    font-size: 10px;
+}
+
+.status {
+    flex-shrink: 0;
+    padding: 4px 7px;
+    border: 1px solid #dbeafe;
+    border-radius: 3px;
+    background-color: #eff6ff;
+    color: #3973bb;
+    font-size: 9px;
+}
+
+/* Responsive layout */
+
+@media (max-width: 600px) {
+    .toolbar {
+        flex-wrap: wrap;
+    }
+
+    .toolbar input {
+        width: 100%;
+    }
+
+    .dashboard {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .profile-card,
+    .projects-card {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .navbar nav {
+        gap: 12px;
+    }
+
+    .project {
+        flex-wrap: wrap;
+    }
+}
